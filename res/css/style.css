@@ -1,15 +1,59 @@
-/* proposed theme:
+/* ***proposed*** color theme theme:
     #080708
     #3772ff
     #df2935
     #fdca40
     #e6e8e6
+
+    hover effect: saturation reduced by 35
     */
+
+/* General style */
 
 body {
     font-family: "Open Sans", sans-serif;
     color: #080708;
 }
+
+a {
+    color: #3772ff;
+}
+
+/* Header */
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: #fdca40;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header > img {
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+header > a {
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    color: #080708;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header > a:hover {
+    background-color: #fce197;
+}
+
+/* login.html */
 
 .loginBox {
     display: flex;
