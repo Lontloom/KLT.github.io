@@ -1,0 +1,43 @@
+/* proposed theme:
+    #080708
+    #3772ff
+    #df2935
+    #fdca40
+    #e6e8e6
+    */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #080708;
+}
+
+.loginBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer {
+    background-color: #e6e8e6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.loginContainer > h1 {
+    margin: 10px;
+}
+
+.loginInput {
+    margin: 5px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.loginButton {
+    background-color: #3772ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
