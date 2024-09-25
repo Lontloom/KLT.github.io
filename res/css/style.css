@@ -27,7 +27,6 @@ body {
 
 a {
     color: var(--link-color);
-}
 
 /* Header */
 
@@ -80,7 +79,7 @@ footer > strong {
 }
 
 /* TODO: should the footer be visible (even if the content is larger then the screen and needs to be scrolled?)
-/* TODO: responsive resizing
+   TODO: responsive resizing */
 
 /* login.html */
 
@@ -122,6 +121,7 @@ div.posts {
     flex-direction: column;
     align-items: center;
 }
+  
 div.post:not(.header, .body){
     background-color: var(--box-background-color);
     border-radius: 10px;
@@ -147,5 +147,4 @@ div.post:not(.header, .body){
     & .post.header {
         user-select: none;
     }
-
 }
