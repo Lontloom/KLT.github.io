@@ -10,21 +10,30 @@
 
 /* General style */
 
+:root {
+    --box-background-color: #e6e8e6;
+    --header-background-color: #fdca40;
+    --footer-background-color: #fdca40;
+    --header-hover-color: #fce197;
+    --button-color: #3772ff;
+    --link-color: #3772ff;
+    --text-color: #080708;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
-    color: #080708;
+    color: var(--text-color, #000);
 }
 
 a {
-    color: #3772ff;
-}
+    color: var(--link-color);
 
 /* Header */
 
 header {
     top: 0;
     position: sticky;
-    background-color: #fdca40;
+    background-color: var(--header-background-color);
     border-radius: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -44,14 +53,33 @@ header > a {
     padding: 10px;
     margin: 10px;
     font-weight: bold;
-    color: #080708;
+    color: var(--text-color);
     text-decoration: none;
     border-radius: 5px;
 }
 
 header > a:hover {
-    background-color: #fce197;
+    background-color: var(--header-hover-color);
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-background-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+footer > strong {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* TODO: should the footer be visible (even if the content is larger then the screen and needs to be scrolled?)
+   TODO: responsive resizing */
 
 /* login.html */
 
@@ -62,7 +90,7 @@ header > a:hover {
 }
 
 .loginContainer {
-    background-color: #e6e8e6;
+    background-color: var(--box-background-color);
     border-radius: 10px;
     text-align: center;
     padding: 10px;
@@ -81,7 +109,42 @@ header > a:hover {
 }
 
 .loginButton {
-    background-color: #3772ff;
+    background-color: var(--button-color);
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+/* index.html */
+
+div.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+div.post:not(.header, .body){
+    background-color: var(--box-background-color);
+    border-radius: 10px;
+    text-align: start;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    & div.post.body:not(:has(p)) + .thumbs.up {
+        margin-top: 10px;
+    }
+
+    & .post.body:has(img) {
+        flex-direction: column;
+    }
+
+    & .post.header {
+        user-select: none;
+    }
 }
