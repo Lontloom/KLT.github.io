@@ -23,6 +23,8 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: var(--text-color, #000);
+    height: 100%;
+    margin: 0;
 }
 
 a {
@@ -42,7 +44,7 @@ header {
     align-items: center;
 }
 
-header > img {
+header>img {
     align-self: flex-end;
     margin-top: 20px;
     margin-right: 20px;
@@ -50,7 +52,7 @@ header > img {
     margin-left: auto;
 }
 
-header > a {
+header>a {
     padding: 10px;
     margin: 10px;
     font-weight: bold;
@@ -59,7 +61,7 @@ header > a {
     border-radius: 5px;
 }
 
-header > a:hover {
+header>a:hover {
     background-color: var(--header-hover-color);
 }
 
@@ -68,13 +70,14 @@ header > a:hover {
 footer {
     background-color: var(--footer-background-color);
     border-radius: 10px;
-    margin-top: 20px;
+
     display: flex;
     justify-content: center;
     user-select: none;
+    margin-top: auto;
 }
 
-footer > strong {
+footer>strong {
     padding: 10px;
     margin: 10px;
 }
@@ -97,7 +100,7 @@ footer > strong {
     padding: 10px;
 }
 
-.loginContainer > h1 {
+.loginContainer>h1 {
     margin: 10px;
 }
 
@@ -115,15 +118,15 @@ footer > strong {
     margin-bottom: 20px;
 }
 
-/* index.html */
+/* --------------   index.html -------------------  */
 
 div.posts {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
-div.post:not(.header, .body){
+
+div.post:not(.header, .body) {
     background-color: var(--box-background-color);
     border-radius: 10px;
     text-align: start;
@@ -137,7 +140,7 @@ div.post:not(.header, .body){
         justify-content: space-between;
     }
 
-    & div.post.body:not(:has(p)) + .thumbs.up {
+    & div.post.body:not(:has(p))+.thumbs.up {
         margin-top: 10px;
     }
 
@@ -148,4 +151,55 @@ div.post:not(.header, .body){
     & .post.header {
         user-select: none;
     }
+}
+
+/* --------------- addPost.html  -----------------------*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.post-container {
+    background-color: var(--box-background-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+form>label {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+form>textarea,
+form>input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+form>button {
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form>button:hover {
+    background-color: #2c5edb;
+    
 }
