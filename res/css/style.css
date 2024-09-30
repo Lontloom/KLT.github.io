@@ -120,6 +120,12 @@ footer>strong {
     margin-bottom: 20px;
 }
 
+@media (max-width: 330px){
+    .loginContainer {
+        border-radius: 0px;
+    }
+}
+
 /* --------------   index.html -------------------  */
 
 div.posts {
