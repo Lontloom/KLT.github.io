@@ -30,7 +30,7 @@ body {
     margin: 0;
 }
 
-a {
+h1 ~ a {
     color: var(--link-color);
 }
 
