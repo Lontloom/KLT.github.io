@@ -85,9 +85,6 @@ footer>strong {
     margin: 10px;
 }
 
-/* TODO: should the footer be visible (even if the content is larger then the screen and needs to be scrolled?)
-   TODO: responsive resizing */
-
 /* login.html */
 
 .loginBox {
@@ -129,6 +126,12 @@ div.posts {
     align-items: center;
 }
 
+div.post:not(.header, .body) div {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
 div.post:not(.header, .body) {
     background-color: var(--box-background-color);
     border-radius: 10px;
@@ -136,12 +139,6 @@ div.post:not(.header, .body) {
     padding: 20px;
     margin: 10px;
     width: 400px;
-
-    & div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     & div.post.body:not(:has(p))+.thumbs.up {
         margin-top: 10px;
