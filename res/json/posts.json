@@ -3,7 +3,10 @@
         "id": 0,
         "text": "Look at my new laptop",
         "picture": "https://picsum.photos/id/0/400/300",
-        "author": "jamar.nein@gmail.com",
+        "author": {
+            "name": "Jamar Nein",
+            "email": "jamar.nein@gmail.com"
+        },
         "creationTimestamp": 1729527365742,
         "likes": 42
     },
@@ -11,21 +14,30 @@
         "id": 1,
         "text": "Went #hiking today",
         "picture": "https://picsum.photos/id/11/400/300",
-        "author": "rafaela.purdin@yahoo.com",
+        "author": {
+            "name": "Rafaela Purdin",
+            "email": "rafaela.purdin@yahoo.com"
+        },
         "creationTimestamp": 1729527537057,
         "likes": 2
     },
     {
         "id": 2,
         "text": "Did we had any homework for tomorrow?",
-        "author": "loyce.narimatsu@gmail.com",
+        "author": {
+            "name": "Loyce Narimatsu",
+            "email": "loyce.narimatsu@gmail.com"
+        },
         "creationTimestamp": 1729527717217,
         "likes": 1
     },
     {
         "id": 3,
         "text": "Anyone knows in which room is the lab today?",
-        "author": "shaunta.dedier@yahoo.com",
+        "author": {
+            "name": "Shaunta Dedier",
+            "email": "shaunta.dedier@yahoo.com"
+        },
         "creationTimestamp": 1729527752085,
         "likes": 0
     },
@@ -33,14 +45,20 @@
         "id": 4,
         "text": "Just found this old picture!",
         "picture": "https://picsum.photos/id/27/400/300",
-        "author": "lynn.dieffenbach@mymail.io",
+        "author": {
+            "name": "Lynn Dieffenbach",
+            "email": "lynn.dieffenbach@mymail.io"
+        },
         "creationTimestamp": 1729528355664,
         "likes": 7
     },
     {
         "id": 5,
         "picture": "https://picsum.photos/id/29/400/300",
-        "author": "jody.rossow@gmail.com",
+        "author": {
+            "name": "Jody Rossow",
+            "email": "jody.rossow@gmail.com"
+        },
         "creationTimestamp": 1729527987821,
         "likes": 101
     },
@@ -48,7 +66,10 @@
         "id": 6,
         "text": "I like #music",
         "picture": "https://picsum.photos/id/39/400/300",
-        "author": "sammy.milloy@yahoo.com",
+        "author": {
+            "name": "Sammy Milloy",
+            "email": "sammy.milloy@yahoo.com"
+        },
         "creationTimestamp": 1729528005872,
         "likes": 5
     },
@@ -56,14 +77,20 @@
         "id": 7,
         "text": "Moved to #NYC",
         "picture": "https://picsum.photos/id/57/400/300",
-        "author": "josue.reggio@gmail.com",
+        "author": {
+            "name": "Josue Reggio",
+            "email": "josue.reggio@gmail.com"
+        },
         "creationTimestamp": 1729527365742,
         "likes": 16
     },
     {
         "id": 8,
         "text": "Hey, I just found this nice website. This is better than all the other social media platforms I used.",
-        "author": "biggestfanintown123@fun.z",
+        "author": {
+            "name": "biggestfanintown123",
+            "email": "biggestfanintown123@fun.z"
+        },
         "creationTimestamp": 1729527365742,
         "likes": 347
     },
@@ -71,7 +98,10 @@
         "id": 9,
         "text": "This post has 18 likes. I did this with the magic of #programming",
         "picture": "https://picsum.photos/id/160/400/300",
-        "author": "fancyprogrammer2@server.io",
+        "author": {
+            "name": "fancyprogrammer2",
+            "email": "fancyprogrammer2@server.io"
+        },
         "creationTimestamp": 1729528376775,
         "likes": 18
     }
