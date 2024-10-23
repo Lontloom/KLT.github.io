@@ -1,16 +1,31 @@
 
 window.onload = async function() {
+
+    // fetch("https://api.jsonbin.io/v3/b/6717e70eacd3cb34a89b48c3")
+    // .then((response) => response.json())
+    // .then(json => {
+    //     setPost(json.record);
+    // })
+    // .catch(err => {
+    //     const error = document.createElement("div");
+    //     error.className = "post error";
+    //     error.innerText = err;
+    //     const postParent = document.getElementsByClassName("posts")[0];
+    //     postParent.appendChild(error);
+    // })
+
     fetch('../res/json/posts.json')
-            .then((response) => response.json())
-            .then(json => {
-                setPost(json);
-            })
-            .catch(err => {
-                let errDiv = document.createElement("div");
-                errDiv.className = 'post';
-                errDiv.innerText = err;
-                document.body.appendChild(errDiv);
-            })
+    .then((response) => response.json())
+    .then(json => {
+        setPost(json);
+    })
+    .catch(err => {
+        const error = document.createElement("div");
+        error.className = "post error";
+        error.innerText = err;
+        const postParent = document.getElementsByClassName("posts")[0];
+        postParent.appendChild(error);
+    })
 
     const setPost = (json) => {
         for (let i = 0; i < json.length; i++) {
