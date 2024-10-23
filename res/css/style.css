@@ -185,6 +185,10 @@ div.post:not(.header, .body) {
     }
 }
 
+div.post.body img {
+    border-radius: 10px;
+}
+
 @media (max-width: 500px) {
     div.post:not(.header, .body) {
         width: 100%;
@@ -203,6 +207,10 @@ div.post:not(.header, .body) {
             margin-left: 5px;
             margin-right: 5px;
             margin-bottom: 10px;
+        }
+
+        div.post.body > img {
+            border-radius: 0px;
         }
     }
 }
