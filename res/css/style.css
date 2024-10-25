@@ -11,13 +11,14 @@
 /* General style */
 
 :root {
-    --box-background-color: #e6e8e6;
-    --header-background-color: #fdca40;
-    --footer-background-color: #fdca40;
-    --header-hover-color: #fce197;
-    --button-color: #3772ff;
-    --link-color: #3772ff;
+    --box-background-color: #ffffff;
+    --header-background-color: #b0c4e3;
+    --footer-background-color: #b0c4e3;
+    --hover-color: #678cc2;
+    --button-color: #1344d6;
+    --link-color: #1344d6;
     --text-color: #080708;
+    --background-color: #e6e8e6;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: var(--background-color);
 }
 
 h1 ~ a {
@@ -46,6 +48,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
 }
 
 header>img {
@@ -66,7 +69,7 @@ header>a {
 }
 
 header>a:hover {
-    background-color: var(--header-hover-color);
+    background-color: var(--hover-color);
 }
 
 /* Footer */
@@ -80,6 +83,7 @@ footer {
     justify-content: center;
     user-select: none;
     margin-top: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
 }
 
 footer>strong {
@@ -99,8 +103,9 @@ footer>strong {
     background-color: var(--box-background-color);
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     margin: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
 }
 
 .loginContainer>h1 {
@@ -111,14 +116,21 @@ footer>strong {
     margin: 5px;
     background-color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-bottom: 1px solid black;
     padding: 10px;
 }
 
 .loginButton {
     background-color: var(--button-color);
+    color: white;
     font-weight: bold;
     margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.loginButton:hover {
+    background-color: var(--hover-color);
 }
 
 @media (max-width: 330px){
@@ -157,6 +169,10 @@ div.thumbs.up {
     flex-direction: row;
     gap: 10px;
     justify-content: flex-start;
+
+    & p {
+        margin: 0px;
+    }
 }
 
  div.post.header > div p{
@@ -170,7 +186,8 @@ div.post:not(.header, .body) {
     text-align: start;
     padding: 20px;
     margin: 10px;
-    width: 400px;
+    width: 600px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
 
     & div.post.body:not(:has(p))+.thumbs.up {
         margin-top: 10px;
@@ -180,16 +197,9 @@ div.post:not(.header, .body) {
         flex-direction: column;
     }
 
-    & .post.header {
-        user-select: none;
-    }
 }
 
-div.post.body img {
-    border-radius: 10px;
-}
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     div.post:not(.header, .body) {
         width: 100%;
         padding: 0px;
@@ -226,6 +236,16 @@ div.post.body img {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+
+    & h1 {
+        text-align: center;
+    }
+
+    & div {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -242,6 +262,18 @@ form>input[type="file"] {
     border-radius: 5px;
     border: none;
     resize: none;
+    padding: 5px;
+    border: 1px solid black
+}
+
+form>input[type="file"]::file-selector-button {
+    background-color: var(--hover-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 #post-body {
@@ -254,7 +286,7 @@ form>input[type="file"] {
     }
 }
 
-form>button {
+form>div>button {
     background-color: var(--button-color);
     color: white;
     font-weight: bold;
@@ -264,7 +296,6 @@ form>button {
     cursor: pointer;
 }
 
-form>button:hover {
-    background-color: #2c5edb;
-    
+form>div>button:hover {
+    background-color: var(--hover-color);
 }
