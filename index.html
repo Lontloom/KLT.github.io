@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="res/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="res/js/indexScript.js"></script>
     <title>PostIt</title>
 </head>
@@ -18,7 +19,14 @@
         <a href="index.html"> Home </a>
         <p> | </p>
         <a href="addPost.html"> Add Post</a>
-        <img src="res/svg/person.svg" alt="Person">
+        <div class="profile">
+            <img src="res/svg/person.svg" alt="Person" id="profile-icon">
+            <div id="dropdown" class="dropdown-content">
+                <p>Bobby Hill</p>
+                <p>doIKnowWhatA.jpeg@is.ee</p>
+                <a href="login.html">logout</a>
+            </div>
+        </div>
     </header>
     <div class="posts">
     </div>

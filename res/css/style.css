@@ -49,6 +49,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+    padding: 0 20px;
 }
 
 header>img {
@@ -298,4 +299,35 @@ form>div>button {
 
 form>div>button:hover {
     background-color: var(--hover-color);
+}
+/*------------DROPDOWN------------------*/
+.profile {
+    position: relative; 
+    margin-left: auto;
+}
+
+#dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background-color: var(--box-background-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100; 
+    width: 200px; 
+}
+
+#dropdown a {
+    color: var(--link-color);
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+#dropdown a:hover {
+    background-color: var(--hover-color);
+    padding: 5px;
+    border-radius: 5px;
 }
