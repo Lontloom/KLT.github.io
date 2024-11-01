@@ -14,7 +14,7 @@ window.onload = async function() {
     //     postParent.appendChild(error);
     // })
 
-    fetch('../res/json/posts.json')
+    fetch('/res/json/posts.json')
     .then((response) => response.json())
     .then(json => {
         setPost(json);
