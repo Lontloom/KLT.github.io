@@ -2,7 +2,7 @@
     {
         "id": 0,
         "text": "Look at my new laptop",
-        "picture": "https://picsum.photos/id/0/400/300",
+        "picture": "https://picsum.photos/id/0/600/450",
         "author": {
             "name": "Jamar Nein",
             "email": "jamar.nein@gmail.com"
@@ -13,7 +13,7 @@
     {
         "id": 1,
         "text": "Went #hiking today",
-        "picture": "https://picsum.photos/id/11/400/300",
+        "picture": "https://picsum.photos/id/11/600/450",
         "author": {
             "name": "Rafaela Purdin",
             "email": "rafaela.purdin@yahoo.com"
@@ -44,7 +44,7 @@
     {
         "id": 4,
         "text": "Just found this old picture!",
-        "picture": "https://picsum.photos/id/27/400/300",
+        "picture": "https://picsum.photos/id/27/600/450",
         "author": {
             "name": "Lynn Dieffenbach",
             "email": "lynn.dieffenbach@mymail.io"
@@ -54,7 +54,7 @@
     },
     {
         "id": 5,
-        "picture": "https://picsum.photos/id/29/400/300",
+        "picture": "https://picsum.photos/id/29/600/450",
         "author": {
             "name": "Jody Rossow",
             "email": "jody.rossow@gmail.com"
@@ -65,7 +65,7 @@
     {
         "id": 6,
         "text": "I like #music",
-        "picture": "https://picsum.photos/id/39/400/300",
+        "picture": "https://picsum.photos/id/39/600/450",
         "author": {
             "name": "Sammy Milloy",
             "email": "sammy.milloy@yahoo.com"
@@ -76,7 +76,7 @@
     {
         "id": 7,
         "text": "Moved to #NYC",
-        "picture": "https://picsum.photos/id/57/400/300",
+        "picture": "https://picsum.photos/id/57/600/450",
         "author": {
             "name": "Josue Reggio",
             "email": "josue.reggio@gmail.com"
@@ -97,7 +97,7 @@
     {
         "id": 9,
         "text": "This post has 18 likes. I did this with the magic of #programming",
-        "picture": "https://picsum.photos/id/160/400/300",
+        "picture": "https://picsum.photos/id/160/600/450",
         "author": {
             "name": "fancyprogrammer2",
             "email": "fancyprogrammer2@server.io"
